@@ -11,24 +11,20 @@
       margin: 0;
       color: #333333;
     }
-
     header {
       background-color: #1D4ED8;
       color: white;
       padding: 1rem;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
       font-size: 2rem;
     }
-
     header p {
       margin: 0.5rem 0 0;
       font-size: 1rem;
     }
-
     .container {
       max-width: 700px;
       margin: 2rem auto;
@@ -37,34 +33,29 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
     textarea, button {
       width: 100%;
       padding: 1rem;
- margin-top: 1rem;
+      margin-top: 1rem;
       font-size: 1rem;
       border: 1px solid #ccc;
       border-radius: 8px;
     }
-
     button {
       background-color: #1D4ED8;
       color: white;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
-
     button:hover {
       background-color: #2563EB;
     }
-
     .result {
       margin-top: 2rem;
       padding: 1rem;
       background-color: #E5E7EB;
       border-radius: 8px;
     }
-
     .error {
       margin-top: 2rem;
       padding: 1rem;
@@ -79,14 +70,12 @@
     <h1>ClipCraft</h1>
     <p>Text to Video Generator</p>
   </header>
-
   <div class="container">
     <form action="/generate" method="post">
       <label for="text">Enter your text:</label>
       <textarea id="text" name="text" rows="5" placeholder="Type something to generate a video..." required></textarea>
       <button type="submit">Generate Video</button>
     </form>
-
     {% if video_url %}
     <div class="result">
       <p><strong>Video generated:</strong></p>
@@ -96,9 +85,8 @@
       </video>
     </div>
     {% endif %}
-
     {% if error %}
- <div class="error">
+    <div class="error">
       <p><strong>Error:</strong> {{ error }}</p>
     </div>
     {% endif %}
