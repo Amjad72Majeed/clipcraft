@@ -1,0 +1,13 @@
+build:
+  python_version: "3.10"
+  system_packages:
+    - ffmpeg
+  python_packages:
+    - torch
+    - transformers
+    - diffusers
+    - accelerate
+    - imageio
+    - moviepy
+
+predict: "predict.py:Predictor"
