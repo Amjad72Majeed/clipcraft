@@ -4,10 +4,12 @@ build:
     - ffmpeg
   python_packages:
     - torch
+    - torchvision
     - transformers
     - diffusers
     - accelerate
-    - imageio
-    - moviepy
+    - xformers
+    - Pillow
+    - tqdm
 
 predict: "predict.py:Predictor"
